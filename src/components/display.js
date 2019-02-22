@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import Card from './card'
 
 
 const Display = (props) => {
@@ -22,7 +23,11 @@ const Display = (props) => {
             <View style={contenedorHoraFecha}>
                 <Text style={fechaTexto}>{props.fecha}</Text>
             </View>
+            <Card>
 
+                <Text> Hola andres david como estas</Text>
+
+            </Card>
         </View>
     )
 }
@@ -42,10 +47,10 @@ const style = {
     ciudadTexto: {
         fontSize: 13
     },
-    horaTexto:{
-        fontSize : 50
+    horaTexto: {
+        fontSize: 50
     },
-    fechaTexto:{
+    fechaTexto: {
         fontSize: 30
     }
 

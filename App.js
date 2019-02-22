@@ -12,7 +12,7 @@ import { Platform, StyleSheet, Text, View } from 'react-native';
 import Titulo from './src/components/titulo'
 import Encabezado from './src/components/encabezado'
 import Display from './src/components/display'
-
+import Card from './src/components/card'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -28,6 +28,8 @@ export default class App extends Component<Props> {
       <View>
         <Encabezado tituloEncabezado={'Relog mundial'}> </Encabezado>
         <Display ciudad={'Pasto'} hora={'12:38 pm'} fecha={'17 de Febrero'}> </Display>
+        
+        
       </View>
       // <View style={styles.container}>
       //   <Text style={styles.welcome}>Hola mundo COMO ESTAS!</Text>
