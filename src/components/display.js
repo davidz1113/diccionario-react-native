@@ -1,6 +1,7 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Button } from 'react-native';
 import Card from './card'
+import CardSection from './cardSection';
 
 
 const Display = (props) => {
@@ -13,21 +14,54 @@ const Display = (props) => {
         fechaTexto
     } = style;
     return (
-        <View style={contenedorExterior}>
-            <View style={contenedorCiudad}>
-                <Text style={ciudadTexto}>{props.ciudad}</Text>
-            </View>
-            <View style={contenedorHoraFecha}>
-                <Text style={horaTexto}>{props.hora}</Text>
-            </View>
-            <View style={contenedorHoraFecha}>
-                <Text style={fechaTexto}>{props.fecha}</Text>
-            </View>
-            <Card>
+        <View >
+            <View style={contenedorExterior} >
+                <View style={contenedorCiudad}>
+                    <Text style={ciudadTexto}>{props.ciudad}</Text>
+                </View>
+                <View style={contenedorHoraFecha}>
+                    <Text style={horaTexto}>{props.hora}</Text>
+                </View>
+                <View style={contenedorHoraFecha}>
+                    <Text style={fechaTexto}>{props.fecha}</Text>
+                </View>
+                <Card>
+                    <CardSection>
+                        <Text>Probando un componente Card</Text>
+                    </CardSection>
+                    <CardSection >
+                        <Text>Esta es otra sección</Text>
+                    </CardSection>
+                    <View style={{
+                        position: 'relative',
+                        justifyContent: 'center',
+                        flexDirection: 'row'
+                    }}>
 
-                <Text> Hola andres david como estas</Text>
+                        <CardSection>
+                            <Text>y esta otra más!</Text>
+                        </CardSection>
+                    </View>
+                    <View style={{
+                        position: 'relative',
+                        justifyContent: 'center',
+                        flexDirection: 'row'
+                    }}>
+                        <CardSection>
 
-            </Card>
+                            <Button
+
+                                onPress={() => { console.log('presed') }}
+                                title="Aceptar"
+                                color="#ff9503"
+
+                            />
+                        </CardSection>
+                    </View>
+
+                </Card>
+            </View>
+
         </View>
     )
 }
