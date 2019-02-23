@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, Button } from 'react-native';
 import Card from './card'
 import CardSection from './cardSection';
-
+import Libro from './libro';
 
 const Display = (props) => {
     const {
@@ -60,6 +60,8 @@ const Display = (props) => {
                     </View>
 
                 </Card>
+                    <Libro/>
+
             </View>
 
         </View>
