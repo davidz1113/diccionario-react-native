@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StatusBar } from 'react-native';
+import { View, Text, StatusBar, ScrollView } from 'react-native';
 import BarraInferior from './lib/Barrainferior';
 import Cabecera from './lib/Cabecera';
 import Resumen from './lib/Resumen';
@@ -11,10 +11,12 @@ const Inicio = () => {
             {/* <StatusBar  barStyle = "dark-content" hidden = {false} backgroundColor = "#00BCD4" translucent = {true}/> */}
 
             <View style={stylesScreen.header}>
-                <Cabecera tituloEncabezado="Inicio"></Cabecera>
+                <Cabecera tituloEncabezado="Inicios"></Cabecera>
             </View>
             <View style={stylesScreen.content}>
-                <Resumen />
+                <ScrollView>
+                    <Resumen />
+                </ScrollView>
             </View>
             <View style={stylesScreen.footer}>
 

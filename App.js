@@ -14,7 +14,7 @@ import Encabezado from './src/components/encabezado'
 import Display from './src/components/display'
 import Card from './src/components/card'
 import Inicio from './src/components/seccion-ahorros/inicio'
-
+import LibroList from './src/components/libroList'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -27,10 +27,15 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Inicio></Inicio>
+      /**
+       * Para la seccion de la barra inferior junto con el
+       * scroll view ademnas de probar posicion con 
+       * flex
+       */
 
-      </View>
+      // <View style={styles.container}>
+      //   <Inicio></Inicio>
+      // </View>
 
 
       /**Vista para el ejercicio de las tarjetas y botones */
@@ -45,6 +50,13 @@ export default class App extends Component<Props> {
       //   <Text style={styles.instructions}>To get started, edit App.js</Text>
       //   {/* <Text style={styles.instructions}>{instructions}</Text> */}
       // </View>
+
+      /**
+       * Vista para la seccion de libros
+       */
+      <View>
+        <LibroList/>
+      </View>
     );
   }
 }

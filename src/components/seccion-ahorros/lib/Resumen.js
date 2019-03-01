@@ -13,7 +13,7 @@ class Resumen extends Component {
                 itemNumeroTexto, 
                 itemContenedor } = styles;
         return (
-            <ScrollView>
+            // <ScrollView>
 
             <View style={contenedor}>
                 <View style={itemContenedor}>
@@ -38,7 +38,7 @@ class Resumen extends Component {
                     </View>
                 </View>
             </View>
-            </ScrollView>
+            /* </ScrollView> */
 
         );
     }
@@ -46,7 +46,7 @@ class Resumen extends Component {
 
 const styles = {
     contenedor: {
-        padding: 30,
+        padding: 20,
         justifyContent: 'space-around'
     },
     itemTexto: {
@@ -88,7 +88,7 @@ const styles = {
         color: '#fff'
     },
     itemContenedor: {
-        paddingBottom: 50
+        paddingBottom: 10
     }
 };
 
