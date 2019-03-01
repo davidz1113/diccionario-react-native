@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Text } from "react-native";
+import { Text, ScrollView } from "react-native";
 import request from 'superagent';
-
+import Libro from './libro'
 
 class LibroList extends Component {
 
@@ -11,9 +11,7 @@ class LibroList extends Component {
      * global el estado de los objetos que queramos renderizar luego.
      */
     state = {
-        libros: {
-
-        }
+        libros: []
     }
 
 
@@ -28,14 +26,23 @@ class LibroList extends Component {
                 key: 'AIzaSyBC9v22ZtL-NfAFr1HSqvMPaawZFbJNJbY'
             })
             .end((err, res) => {
-                this.setState({ libros: res.body });
+                this.setState({ libros: res.body.items });
             })
     }
 
     render() {
-        console.log(this.state);
+        // console.log(this.state.libros);
         return (
-            <Text>Ejemplo</Text>
+            <ScrollView>
+                {/* <Text>Hola mundo</Text> */}
+                {this.mostrarLibros()}
+            </ScrollView>
+        );
+    }
+
+    mostrarLibros() {
+        return this.state.libros.map(
+            libro => <Libro key={libro.id} libroData={libro} />
         );
     }
 }

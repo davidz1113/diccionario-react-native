@@ -54,7 +54,7 @@ export default class App extends Component<Props> {
       /**
        * Vista para la seccion de libros
        */
-      <View>
+      <View style={{flex:1}}>
         <LibroList/>
       </View>
     );
