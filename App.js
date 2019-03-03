@@ -13,7 +13,8 @@ import Titulo from './src/components/titulo'
 import Encabezado from './src/components/encabezado'
 import Display from './src/components/display'
 import Card from './src/components/card'
-import Inicio from './src/components/seccion-ahorros/inicio'
+// import Inicio from './src/components/seccion-ahorros/inicio' //seccion vista de ahorros
+import Inicio from './src/components/seccion-login/inicio'
 import LibroList from './src/components/libroList'
 
 const instructions = Platform.select({
@@ -54,8 +55,15 @@ export default class App extends Component<Props> {
       /**
        * Vista para la seccion de libros
        */
-      <View style={{flex:1}}>
-        <LibroList/>
+      // <View style={{flex:1}}>
+      //   <LibroList/>
+      // </View>
+      
+      /**
+       * Vista para la seccion del login
+       */
+      <View style={styles.container}>
+        <Inicio></Inicio>
       </View>
     );
   }

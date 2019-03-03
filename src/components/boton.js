@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
 const Boton = (props) => {
-    const {contendorStyle,textStyles} = styles;
+    const { contendorStyle, textStyles } = styles;
     return (
         <TouchableOpacity style={contendorStyle}>
             <Text style={textStyles}>{props.texto}</Text>
@@ -29,4 +29,4 @@ const styles = {
     }
 }
 
-export default Boton;
+export default { Boton };
