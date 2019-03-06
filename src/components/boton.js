@@ -12,7 +12,7 @@ const Boton = (props) => {
 
 const styles = {
     contendorStyle: {
-        // flex: 1,
+         flex: 1,
         alignSelf: 'stretch',
         backgroundColor: '#f1f1f1',
         borderRadius: 5,
@@ -29,4 +29,4 @@ const styles = {
     }
 }
 
-export default { Boton };
+export { Boton };

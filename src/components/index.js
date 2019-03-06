@@ -7,3 +7,4 @@ export * from './boton';
 export * from './card';
 export * from './cardSection';
 export * from './encabezado';
+export * from './input';
