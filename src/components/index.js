@@ -8,3 +8,4 @@ export * from './card';
 export * from './cardSection';
 export * from './encabezado';
 export * from './input';
+export * from './spinner';
