@@ -16,6 +16,7 @@ import Card from './src/components/card'
 // import Inicio from './src/components/seccion-ahorros/inicio' //seccion vista de ahorros
 import Inicio from './src/components/seccion-login/inicio'
 import LibroList from './src/components/libroList'
+import AppRedux from './src/components/redux/app';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -62,9 +63,15 @@ export default class App extends Component<Props> {
       /**
        * Vista para la seccion del login
        */
-      <View style={styles.container}>
-        <Inicio></Inicio>
+      // <View style={styles.container}>
+      //   <Inicio></Inicio>
+      // </View>
+
+      <View>
+        <AppRedux></AppRedux>
+
       </View>
+
     );
   }
 }
