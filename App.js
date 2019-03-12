@@ -67,7 +67,7 @@ export default class App extends Component<Props> {
       //   <Inicio></Inicio>
       // </View>
 
-      <View>
+      <View style={styles.container}>
         <AppRedux></AppRedux>
 
       </View>

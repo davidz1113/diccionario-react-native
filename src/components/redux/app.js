@@ -11,7 +11,7 @@ const AppRedux = () => {
     return (
         <Provider store={createStore(reducers)}>
             <View>
-                <Encabezado tituloEncabezado="Frutas" />
+                <Encabezado tituloEncabezado={"Frutas"} />
                 <ListaFrutas />
             </View>
         </Provider>
