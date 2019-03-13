@@ -1,4 +1,4 @@
-export const SeleccionarFruta = (idFruta) => {
+export const seleccionarFruta = (idFruta) => {
     return {
         type: 'seleccionarFruta',
         payload : idFruta

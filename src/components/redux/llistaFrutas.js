@@ -22,12 +22,9 @@ class ListaFrutas extends Component {
         // console.log(this.props); lista las frutas que estan en el props
         return (
             <View>
-
-                <Text>Listado de frutas</Text>
                 <ListView
                     dataSource={this.dataSource}
                     renderRow={this.mostrarFila} >
-
                 </ListView>
             </View>
 
