@@ -17,6 +17,10 @@ import Card from './src/components/card'
 import Inicio from './src/components/seccion-login/inicio'
 import LibroList from './src/components/libroList'
 import AppRedux from './src/components/redux/app';
+import Perfil from './src/components/navegacion/Perfil';
+
+
+import Router from './src/components/navegacion/Router'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -59,7 +63,7 @@ export default class App extends Component<Props> {
       // <View style={{flex:1}}>
       //   <LibroList/>
       // </View>
-      
+
       /**
        * Vista para la seccion del login
        */
@@ -67,10 +71,17 @@ export default class App extends Component<Props> {
       //   <Inicio></Inicio>
       // </View>
 
-      <View style={styles.container}>
-        <AppRedux></AppRedux>
+      /**
+       * Vista para el uso de redux con lista de frutas y descripcion desplegable
+       */
+      // <View style={styles.container}>
+      //   <AppRedux></AppRedux>
 
-      </View>
+      // </View>
+
+      // <View style={styles.container}>
+        <Router />
+      //</View> *
 
     );
   }
